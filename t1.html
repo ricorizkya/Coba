@@ -1,0 +1,253 @@
+<html>
+<head>
+<title>Ricos</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<style>
+	ul
+	{
+		list-style-type:none;
+		margin:0;
+		padding:0;
+		overflow:hidden;
+		background-color:#3c3c2a;
+		position: fixed;
+		width:100%;
+		top: 0;
+		transition: 0.2s;
+	}
+	li
+	{
+		float:left;
+	}
+	li a
+	{
+		display:block;
+		color:white;
+		text-align:center;
+		padding:14px 16px;
+		text-decoraion:none;
+	}
+	li a:hover:not(.active)
+	{
+		background-color:#111;
+	}
+	.active
+	{
+		background-color:#ff9900;
+	}
+	* {
+    box-sizing: border-box;
+	}
+	input[type=text], select, textarea 
+	{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+	}
+	label 
+	{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+	}
+	input[type=submit] 
+	{
+    background-color: #00aaff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+	}
+	input[type=submit]:hover 
+	{
+    background-color: #45a049;
+	}
+	.container 
+	{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+	}
+	.col-25 
+	{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+	}
+	.col-75 
+	{
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+	}
+	.row:after 
+	{
+    content: "";
+    display: table;
+    clear: both;
+	}
+	@media screen and (max-width: 600px) 
+	{
+		.col-25, .col-75, input[type=submit] 
+		{
+        width: 100%;
+        margin-top: 0;
+		}
+	}
+	.footer 
+	{
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		background-color:#3c3c2a;
+		color:#eaeae1;
+	}
+</style>
+</head>
+<body>
+<ul>
+  <li><a href="awal.html"><img src="iconH.png" width="30px" height="30px"> Home</a></li>
+  <li><a href="artikel.html"><img src="iconA.png" width="30px" height="30px"> Article</a></li>
+  <li><a class="active" href="tour.html"><img src="iconT.png" width="30px" height="30px"> Tour</a></li>
+  <li style="float:right"><a href="about.html"><img src="iconB.png" width="35px" height="35px"> About</a></li>
+</ul>
+<table>
+	<tr>
+		<center><img src="1.png" width="100%" height="250px" class="rounded">
+	</tr>
+	<br>
+	<tr>
+		<marquee><i><b><font-size="24">Bring you to the heaven of the world</marquee>
+		<br>
+	</tr>
+</table>
+<br>
+<b><font size="26">Masukkan Data Diri Anda</b></font>
+<div class="container"> 
+  <form action="/.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="nama" value="nama">Nama Lengkap</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="nama" name="nama" placeholder="Nama Lengkap" required>
+      </div>
+    </div>
+	<div class="row">
+	  <div class="col-25">
+		<label for="jk" value="jk">Jenis Kelamin</label>
+	  </div>
+	  <div class="col-75">
+		<input type="radio" name="gender" value="male" checked> Male
+		<input type="radio" name="gender" value="female"> Female 
+	  </div>
+	</div>
+	<div class="row">
+      <div class="col-25">
+        <label for="ttl" value="ttl">Tempat & Tanggal Lahir</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="ttl" name="ttl" placeholder="Tempat & Tanggal Lahir" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="no" value="hp">No. HP</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="no" name="no" placeholder="No. HP" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="mail" value="mail">E-Mail</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="mail" name="mail" placeholder="E-mail" required>
+      </div>
+    </div>
+	<div class="row">
+      <div class="col-25">
+        <label for="trip" value="trip">Trip</label>
+      </div>
+      <div class="col-75">
+        <select id="trip" name="trip" value="trip">
+          <option value="merbabu">Merbabu 2D1N</option>
+          <option value="merapi">Merapi 2D1N</option>
+          <option value="sindoro">Sindoro 2D1N</option>
+		  <option value="sumbing">Sumbing 2D1N</option>
+		  <option value="ungaran">Ungaran 2D1N</option>
+		  <option value="prau">Prau 2D1N</option>
+		  <option value="slamet">Slamet 3D2N</option>
+		  <option value="gede">Gede 3D2N</option>
+		  <option value="semeru">Semeru 2D1N</option>
+		  <option value="semeru2">Semeru 3D2N</option>
+		  <option value="rinjani">Rinjani 2D1N</option>
+		  <option value="rinjani2">Rinjani 3D2N</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject" value="alamat">Alamat</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Alamat" style="height:100px" required></textarea>
+      </div>
+    </div><br>
+	<center>
+    <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+			Submit
+	</button>
+	</center>
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Pembayaran</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <center>
+			<img src="checked.png"><br><br>
+			<b>Pesanan anda sedang kami proses. Untuk selanjutnya kami akan mengirimkan E-Mail untuk memberikan total pembayaran.<br><br>
+				Terima Kasih, Selamat Berlibur <img src="smiling.png"</b>
+		</center>	
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </form>
+</div>
+<div class="footer">
+	<table>
+		<tr>
+			<td><b><font-size="20px">Contact Person</td>
+		</tr>
+		<tr>
+			<td><a href="https://mail.google.com/mail/u/0/#inbox"><img src="g.png" width="100px" height="100px"></td>
+			<td width="220px">ricorizkya26@gmail.com</td>
+			<td><a href="https://www.instagram.com/rico_rizkya/?hl=en"><img src="ig.png" width="100px" height="100px"></td>
+			<td width="220px">rico_rizkya</td>
+			<td><a href="https://www.facebook.com/rico.rizkya.5"><img src="fb.png" width="100px" height="100px"></td>
+			<td width="220px">Rico Rizkya</td>
+			<td><img src="wa.png" width="100px" height="100px"></td>
+			<td width="220px">082144285606</td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>
